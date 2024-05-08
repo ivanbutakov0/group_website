@@ -220,8 +220,6 @@ h2 {
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-.gallery__photos-title {
-}
 
 .gallery__photos-container {
 	display: flex;

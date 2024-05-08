@@ -29,3 +29,18 @@ const galleryTatar = [
 		description: 'Андрея очень часто можно спутать с тараканом',
 	},
 ]
+
+const galleryKokorina = [
+	{
+		imageSrc: '../images/Кокорина1.png',
+		description: 'Фото 1',
+	},
+	{
+		imageSrc: '../images/Кокорина2.png',
+		description: 'Фото 2',
+	},
+	{
+		imageSrc: '../images/Кокорина3.png',
+		description: 'Фото 3',
+	},
+]
