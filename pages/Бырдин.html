@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,8 +13,44 @@
 				<img src="../images/Бырдин.png" alt="" class="image" />
 			</div>
 			<h1 class="title">Бырдин Никита</h1>
-			<p class="card__description">Староста</p>
+			<p class="card__description">Это староста нашей группы</p>
+
+			<div class="gallery card__gallery">
+				<div class="gallery__main-image">
+					<img id="main-image" src="../images/Бырдин1.png" alt="" />
+				</div>
+				<div class="gallery__description">
+					<h3 class="card__description-title">Описание</h3>
+					<p id="description" class="card__description-text">
+						Когда-то играл в дартс, добился определенных результатов.
+					</p>
+				</div>
+				<div class="gallery__photos">
+					<h3 class="gallery__photos-title">Другие фотографии</h3>
+					<div class="gallery__photos-container">
+						<img
+							src="../images/Бырдин1.png"
+							alt=""
+							onclick="handleImageClick(0)"
+						/>
+						<img
+							src="../images/Бырдин2.png"
+							alt=""
+							class="filter-gray"
+							onclick="handleImageClick(1)"
+						/>
+						<img
+							src="../images/Бырдин3.png"
+							alt=""
+							class="filter-gray"
+							onclick="handleImageClick(2)"
+						/>
+					</div>
+				</div>
+			</div>
 			<a href="../index.html" class="button-link">Вернуться на главную</a>
 		</div>
+
+		<script src="../js/gallery.js"></script>
 	</body>
 </html>
