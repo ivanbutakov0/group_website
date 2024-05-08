@@ -20,7 +20,7 @@
 					<img id="main-image" src="../images/Бырдин1.png" alt="" />
 				</div>
 				<div class="gallery__description">
-					<h3 class="card__description-title">Описание</h3>
+					<h3 class="card__description-title">Описание фото</h3>
 					<p id="description" class="card__description-text">
 						Когда-то играл в дартс, добился определенных результатов.
 					</p>
@@ -31,19 +31,19 @@
 						<img
 							src="../images/Бырдин1.png"
 							alt=""
-							onclick="handleImageClick(0)"
+							onclick="handleImageClick(0, galleryByrdin)"
 						/>
 						<img
 							src="../images/Бырдин2.png"
 							alt=""
 							class="filter-gray"
-							onclick="handleImageClick(1)"
+							onclick="handleImageClick(1, galleryByrdin)"
 						/>
 						<img
 							src="../images/Бырдин3.png"
 							alt=""
 							class="filter-gray"
-							onclick="handleImageClick(2)"
+							onclick="handleImageClick(2, galleryByrdin)"
 						/>
 					</div>
 				</div>
@@ -51,6 +51,7 @@
 			<a href="../index.html" class="button-link">Вернуться на главную</a>
 		</div>
 
+		<script src="../js/data.js"></script>
 		<script src="../js/gallery.js"></script>
 	</body>
 </html>

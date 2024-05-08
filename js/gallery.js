@@ -1,24 +1,16 @@
-const galley = [
-	{
-		imageSrc: '../images/Бырдин1.png',
-		description: 'Когда-то играл в дартс, добился определенных успехов.',
-	},
-	{
-		imageSrc: '../images/Бырдин2.png',
-		description: 'Школьная фотография',
-	},
-	{
-		imageSrc: '../images/Бырдин3.png',
-		description: 'Фото с паспорта',
-	},
-]
-
-const handleImageClick = imageId => {
+/**
+ * Handles the click event on an image in the gallery.
+ *
+ * @param {number} imageId - The index of the clicked image in the gallery.
+ * @param {galleryByrdin, galleryTatar} gallery - The gallery name.
+ * @return {void} This function does not return a value.
+ */
+const handleImageClick = (imageId, gallery) => {
 	const mainImage = document.getElementById('main-image')
 	const description = document.getElementById('description')
 
-	mainImage.src = galley[imageId].imageSrc
-	description.textContent = galley[imageId].description
+	mainImage.src = gallery[imageId].imageSrc
+	description.textContent = gallery[imageId].description
 
 	manipulateClass('gallery__photos-container', 'add', 'filter-gray')
 	manipulateClass('gallery__photos-container', 'remove', 'filter-gray', imageId)
